@@ -48,6 +48,7 @@ export default function Characters({ initialCharacters }) {
           </Link>
         </h4>
       </div>
+      <br />
       <div className="charactersCardContainer">
         {initialCharacters
           .filter(
@@ -59,7 +60,10 @@ export default function Characters({ initialCharacters }) {
             (
               character // Map the characters to the component
             ) => (
-              <div className="charactersCard">
+              <div
+                className="charactersCard"
+                key={Math.floor(Math.random() * 1000000)}
+              >
                 <Image
                   src={character.image}
                   width={200}
@@ -84,7 +88,7 @@ export default function Characters({ initialCharacters }) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="linkToCharacters">See Character Wiki</p>
+                  <h4 className="linkToCharacters">See Character Wiki</h4>
                 </a>
               </div>
             )
