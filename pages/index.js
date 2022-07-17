@@ -15,7 +15,7 @@ export default function Home() {
           <Image src="/light-saber.png" alt="logo" width={40} height={40} />{' '}
           Leveraging Star Wars API
         </h1>
-        <p>See stats of your favorite Star Wars's characters!</p>
+        <p>See stats of your favorite Star Wars characters!</p>
         <h4>
           What are you waiting for?
           <Link href="/characters">
