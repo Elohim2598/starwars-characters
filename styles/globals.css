@@ -6,11 +6,115 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
+.homeContainer {
+  background-image: url(../public/home-background.jpg);
+  background-position: center;
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 1.1rem;
+}
+
+.home {
+  color: #fefae0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.charactersContainer {
+  background-image: url(../public/characters-background.jpg);
+  background-position: center;
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+
+.charactersTitle {
+  color: #fefae0;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-size: 2;
+}
+
+.charactersHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.charactersCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 4rem;
+}
+
+.charactersCard {
+  background-color: #1d3557;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #fefae0;
+  border-radius: 9px;
+  height: fit-content;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.characterImage {
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.characterName {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+.linkToCharacters {
+  text-decoration: none;
+  color: #d7050a;
+  cursor: pointer;
+}
+.linkToCharacters:visited {
+  text-decoration: none;
+}
+.linkToCharacters:active {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.beginNow {
+  text-decoration: none;
+  color: #d7050a;
+  cursor: pointer;
+}
+
+.searchbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.charactersSearchBox {
+  border-radius: 13px;
+  padding: 0.8rem;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.charactersSearchBox:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
